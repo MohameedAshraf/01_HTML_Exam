@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <h1>استمارة تسجيل طالب جديد</h1>
+    <p>.يرجى تعبئة جميع الحقول المطلوبة لإتمام عملية التسجيل في المعسكرات التدريبية</p>
+    <form action="" method="post" >
+        <fieldset>
+        <legend>المعلومات الشخصية</legend>
+            <label for="fname">الأسم الأول:</label>
+            <input type="text" id="fname" placeholder="أدخل اسمك الأول" autofocus>
+            <br>
+            <br>
+            <label for="lname">الاسم الأخير:</label>
+            <input type="text" id="lname" placeholder="أدخل اسم العائلة">
+            <br>
+            <br>
+            <label for="birth">تاريخ الميلاد:</label>
+            <input type="date" name="" id="birth">
+            <br>
+            <br>
+            <label for="">الجنس:</label>
+            <input type="radio" name="gender" id="mgender" checked>
+            <label for="mgender">ذكر</label>
+            <input type="radio" name="gender" id="fgender" >
+            <label for="fgender">أنثى</label>
+            <br>
+            <br>
+            <label for="age">العمر:</label>
+            <input type="search" name="age" id="age">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>بيانات الحساب والاتصال</legend>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        <br>
+        <br>
+        <label for="password">كلمة المرور:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <label for="tele">رقم الهاتف</label>
+        <input type="tel" name="tele" id="tele" placeholder="رقم الموبايل مع الرمز">
+        <br>
+        <br>
+        <label for="url">رابط معرض الأعمال (portfolio) أو LinkedIn:</label>
+        <input type="url" name="url" id="url" placeholder="https://...">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>المسار التدريبي والخبرات</legend>
+        <label for="path">المسار التدريبي المطلوب:</label>
+        <select name="" id="path">
+            <option value="defulte">--اختر المسار--</option>
+            <option value="B">Back-End</option>
+            <option value="A">AI</option>
+            <option value="F">Front-End</option>
+        </select>
+        <br>
+        <br>
+        <label for="city">مدينة الإقامة:</label>
+        <input type="text" name="city" id="city">
+        <br>
+        <br>
+        <label for="range">تقييمك لخبرتك البرمجية الحالية(1 - 10):</label>
+        <input type="range" name="" id="range" value="0">
+        <br>
+        <br>
+        <label for="time">الوقت المفضل للمحاضراتك:</label>
+        <input type="time" name="" id="time">
+        <br>
+        <br>
+        <label for="">ما هي التقنيات التي لديك معرفة مسبقة بها؟</label>
+        <br>
+        <input type="checkbox" name="" id="Html&Css">
+        <label for="Html&Css">HTML & CSS</label>
+        <br>
+        <input type="checkbox" name="" id="javaScript">
+        <label for="javaScript">JavaScript</label>
+        <br>
+        <input type="checkbox" name="" id="C#.NET">
+        <label for="C#.NET">C# .NET</label>
+        <br>
+        <input type="checkbox" name="" id="SQL Server">
+        <label for="SQL Server">SQL Server</label>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>مرفقات وتفاصيل إضافية</legend>
+        <label for="filed">إرفاق السيرة الذاتية (Word أو PDF):</label>
+        <input type="file" name="filed" id="filed" accept="pdf/..">
+        <br>
+        <br>
+        <label for="color">اللون المفضل لبيئة التطوير (لتخصيص حسابك):</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <br>
+        <label for="messgae">لماذا ترغب بالانضمام إلى هذا المعسكر؟</label>
+        <br>
+        <textarea name="messgae" id="messgae" placeholder="اكتب دافعك هنا..." rows="5" cols="40"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>الاعتماد</legend>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">أوافق على الشروط و الأحكام الخاصة بالأكاديمية وأن جميع بياناتي صحيحة.</label>
+        <br>
+        <br>
+        <button type="submit">إرسال طلب التسجيل</button>
+        <button type="reset">مسح الحقول</button>
+    </fieldset>
+    </form>
+</body>
+</html>
